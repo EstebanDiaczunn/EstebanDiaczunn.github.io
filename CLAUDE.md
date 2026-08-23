@@ -1,6 +1,6 @@
 # diaczun.com
 
-Sitio personal de Esteban Diaczun: **Libreta** (notas, pensamientos, fragmentos) y **Obras** (libros).
+Sitio personal de Esteban Nicolás Diaczun: **Libreta** (notas, pensamientos, fragmentos) y **Obras** (libros).
 Estático, sin framework. Markdown → HTML con `build.js` (Node + marked + gray-matter). Se publica en
 GitHub Pages desde el repo `EstebanDiaczunn/EstebanDiaczunn.github.io` con dominio `diaczun.com`.
 Los demás repos con Pages (p. ej. `las-mascaras`) quedan servidos debajo: `diaczun.com/las-mascaras/`.

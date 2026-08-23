@@ -8,7 +8,7 @@ const matter = require("gray-matter");
 
 const RAIZ = __dirname;
 const SITIO = "https://diaczun.com";
-const AUTOR = "Esteban Diaczun";
+const AUTOR = "Esteban Nicolás Diaczun";
 const MAIL = "estebandiaczun@gmail.com";
 const ANIO = 2026;
 

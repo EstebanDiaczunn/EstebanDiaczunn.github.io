@@ -1,5 +1,5 @@
 ---
-titulo: Esteban Diaczun
+titulo: Esteban Nicolás Diaczun
 descripcion: Escribo. Acá dejo lo que escribo — libros, notas, pensamientos — sin el formato de blog ni de libro.
 libreta: Lo que no cabe en un libro. Notas, pensamientos, fragmentos, ideas a medio hacer. Sin más orden que la fecha.
 ---
