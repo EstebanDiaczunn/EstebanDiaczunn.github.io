@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Libreta de Esteban Diaczun</title>
+<link>https://diaczun.com/libreta/</link>
+<atom:link href="https://diaczun.com/feed.xml" rel="self" type="application/rss+xml"/>
+<description>Notas, pensamientos y fragmentos.</description>
+<language>es</language>
+<item>
+<title>Esta libreta</title>
+<link>https://diaczun.com/libreta/esta-libreta/</link>
+<guid>https://diaczun.com/libreta/esta-libreta/</guid>
+<pubDate>Sun, 23 Aug 2026 00:00:00 GMT</pubDate>
+<description><![CDATA[<p>No quería un blog. Tampoco otro libro.</p>
+<p>Quería un lugar donde dejar lo que se me ocurre sin tener que decidir antes qué es: si va a ser un libro, un cuento, una idea suelta o nada. Una libreta, en el sentido más literal: se abre, se escribe, se cierra.</p>
+<p>Acá va a haber de todo. Pensamientos. Reflexiones. Fragmentos que quizás algún día sean otra cosa. Y los libros terminados, que viven en <strong>Obras</strong>.</p>
+<p>Nada de esto tiene que ser bueno todavía. Solo tiene que estar escrito.</p>
+]]></description>
+</item>
+</channel>
+</rss>

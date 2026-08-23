@@ -1,0 +1,81 @@
+/* diaczun.com — papel de día, tinta de noche. Misma familia tipográfica que Las Máscaras. */
+:root{
+  --bg:#F4F1EA;--ink:#1F1E1A;--faint:#6E6B62;--rule:#DAD5C8;--gold:#8A6D2B;--gold-hi:#6E561F;
+  --display:"Hoefler Text","Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --body:Charter,"Bitstream Charter","Sitka Text",Cambria,Georgia,serif;
+  --mono:"SF Mono","Cascadia Mono",Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0B0B0A;--ink:#E8E6DD;--faint:#8E8C83;--rule:#2A2A27;--gold:#C9A961;--gold-hi:#DCBF78}
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--gold);text-decoration:none}
+a:hover,a:focus-visible{color:var(--gold-hi);text-decoration:underline;text-underline-offset:.18em;outline:0}
+img{max-width:100%;height:auto;display:block}
+.wrap{max-width:42rem;margin:0 auto;padding:clamp(1.6rem,5vw,3.5rem) clamp(1.1rem,4vw,2rem) 4rem}
+
+/* cabecera */
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding-bottom:1.2rem;margin-bottom:clamp(2rem,6vw,4rem);border-bottom:1px solid var(--rule)}
+.marca{font-family:var(--display);letter-spacing:.14em;text-transform:uppercase;font-size:.9rem;color:var(--ink)}
+.top nav{display:flex;gap:1.4rem}
+.top nav a{font-family:var(--mono);font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--faint)}
+.top nav a[aria-current],.top nav a:hover{color:var(--gold);text-decoration:none}
+
+/* tipografía */
+h1{font-family:var(--display);font-weight:400;letter-spacing:.04em;font-size:clamp(1.9rem,5vw,2.6rem);line-height:1.15;margin:0 0 1rem}
+.portada h1{letter-spacing:.12em;text-transform:uppercase;font-size:clamp(1.6rem,5vw,2.3rem)}
+h2{font-family:var(--display);font-weight:400;font-size:1.4rem;margin:2.2rem 0 .8rem}
+h3{font-family:var(--display);font-weight:400;font-size:1.35rem;letter-spacing:.06em;margin:.2rem 0 .1rem}
+.over{font-family:var(--mono);font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:400;margin:0 0 1rem}
+section{margin-bottom:clamp(2.6rem,7vw,4rem)}
+section .over{padding-top:1.4rem;border-top:1px solid var(--rule)}
+.portada .over{border:0;padding:0}
+.texto p{margin:0 0 1rem}
+.texto.intro{font-family:var(--display);font-size:1.12rem;line-height:1.7;color:var(--ink)}
+.texto blockquote{margin:1.4rem 0;padding-left:1.1rem;border-left:2px solid var(--gold);color:var(--faint);font-style:italic}
+.texto hr{border:0;border-top:1px solid var(--rule);width:4rem;margin:1.8rem 0}
+.texto ul,.texto ol{padding-left:1.4rem}
+.texto li{margin:.3rem 0}
+.texto h2,.texto h3{margin-top:2rem}
+.texto code{font-family:var(--mono);font-size:.85em;background:color-mix(in srgb,var(--ink) 7%,transparent);padding:.1em .35em;border-radius:3px}
+.texto pre{overflow-x:auto;padding:1rem;background:color-mix(in srgb,var(--ink) 6%,transparent);border-radius:4px;font-size:.85rem;line-height:1.5}
+.texto pre code{background:none;padding:0}
+.texto img{margin:1.4rem 0}
+.texto em{color:inherit}
+
+/* listado de notas */
+ul.notas{list-style:none;margin:0;padding:0}
+ul.notas li{display:grid;grid-template-columns:6.2rem 1fr;gap:.6rem 1rem;align-items:baseline;padding:.55rem 0;border-bottom:1px solid var(--rule)}
+ul.notas time{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;color:var(--faint);white-space:nowrap}
+ul.notas time .anio{opacity:.55}
+ul.notas a{color:var(--ink);font-family:var(--display);font-size:1.1rem}
+ul.notas a:hover{color:var(--gold)}
+ul.notas .tema{grid-column:2;font-family:var(--mono);font-size:.65rem;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);margin-top:-.4rem}
+.mas{margin-top:1rem;font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase}
+
+/* nota individual */
+.nota h1{margin-top:.2rem}
+.nota .over a{color:var(--gold)}
+.vecinas{display:flex;justify-content:space-between;gap:1rem;margin-top:3rem;padding-top:1.4rem;border-top:1px solid var(--rule);font-family:var(--display);font-size:.95rem}
+.vecinas a{color:var(--faint);max-width:48%}
+.vecinas a:hover{color:var(--gold)}
+
+/* obras */
+.obra{display:grid;grid-template-columns:minmax(0,10rem) minmax(0,1fr);gap:clamp(1.2rem,4vw,2rem);align-items:start;margin:0 0 2.4rem}
+.obra img{width:100%;box-shadow:0 16px 40px rgba(0,0,0,.35)}
+.obra .over{margin-bottom:.4rem;border:0;padding:0}
+.obra .sub{font-family:var(--display);font-style:italic;color:var(--gold);margin:0 0 .8rem}
+.obra .texto{font-size:.98rem}
+.acciones{display:flex;flex-wrap:wrap;gap:.6rem;margin:1rem 0 0}
+.btn{display:inline-block;padding:.6rem 1.1rem;border:1px solid var(--gold);background:var(--gold);color:var(--bg);font-family:var(--mono);font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;text-decoration:none}
+.btn:hover,.btn:focus-visible{background:var(--gold-hi);border-color:var(--gold-hi);color:var(--bg);text-decoration:none}
+.btn.sec{background:transparent;color:var(--gold)}
+.btn.sec:hover{background:var(--gold);color:var(--bg)}
+@media (max-width:560px){.obra{grid-template-columns:1fr}.obra img{max-width:11rem}}
+
+/* pie */
+footer{margin-top:4rem;padding-top:1.4rem;border-top:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:.4rem 1.6rem;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;color:var(--faint)}
+footer a{color:var(--faint)}
+footer a:hover{color:var(--gold)}
