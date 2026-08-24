@@ -19,7 +19,8 @@ Los demás repos con Pages (p. ej. `las-mascaras`) quedan servidos debajo: `diac
 - `datos/letterboxd.json` — caché del RSS de Letterboxd; se regenera en cada build con red (`--offline` para no tocarla).
 - `.env` (no versionado) — `CF_TOKEN` de Cloudflare con permisos de DNS + Email Routing sobre diaczun.com.
 - `src/style.css` — estilos (papel claro / tinta oscura según el sistema). Se copia a `style.css`.
-- `assets/` — imágenes, favicon.
+- `assets/` — imágenes, `favicon.svg` y la marca: `marca.svg` / `marca.png` (la D con el ojo cerrado, guiño a Las
+  Máscaras). Va en la cabecera, el favicon, el CV/PDF y la firma del mail. No se cambia sin pedirlo Esteban.
 
 Generado (no editar a mano): `index.html`, `libreta/`, `cosas/`, `visto/`, `colofon/`, `feed.xml`, `404.html`, `style.css`.
 
@@ -36,7 +37,8 @@ npm run dev               # vista previa en http://localhost:8787
 
 - Español rioplatense en la libreta; las obras respetan su propia voz.
 - Una nota puede tener tres líneas. No hay mínimo. No se fuerza un cierre.
-- No agregar analítica, comentarios ni fotos. El único JS es el botón de tema.
+- No agregar analítica, comentarios ni fotos. JS mínimo: botón de tema y la inclinación de la portada (solo con mouse).
+- Identidad: papel con grano fino en claro (sin grano en oscuro), Fraunces + Inter, dorado como único acento.
 - Nada de salud (`faro`), dirección ni teléfono. Steam/Letterboxd son públicos y se pueden sacar borrando una línea.
-- Pendiente: `cv.diaczun.com` desde un solo `cv.md` → página + PDF; después apagar Pages de `cv-land`.
+- El CV vive aparte en `proyectos/cv` → `cv.diaczun.com`; desde acá solo se enlaza en el pie.
 - Las URLs de las notas (`/libreta/slug/`) no se cambian una vez publicadas.

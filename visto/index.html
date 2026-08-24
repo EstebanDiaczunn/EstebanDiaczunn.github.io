@@ -24,7 +24,7 @@
 <body class="">
 <div class="wrap">
 <header class="top">
-  <a class="marca" href="../">Esteban Diaczun</a>
+  <a class="marca" href="../"><svg class="mono" viewBox="0 0 100 100" aria-hidden="true"><defs><mask id="ojo"><rect width="100" height="100" fill="#fff"/><path d="M38 50q12 12 24 0" fill="none" stroke="#000" stroke-width="6" stroke-linecap="round"/></mask></defs><path d="M26 18h26a32 32 0 0 1 0 64H26z" fill="currentColor" mask="url(#ojo)"/></svg><span>Esteban Diaczun</span></a>
   <nav>
     <a href="../libreta/">Libreta</a>
     <a href="../cosas/">Cosas</a>
@@ -56,6 +56,7 @@
 </footer>
 </div>
 <script>
+(function(){if(!matchMedia("(hover: hover)").matches||matchMedia("(prefers-reduced-motion: reduce)").matches)return;document.querySelectorAll(".cosa .port").forEach(function(z){var o=z.querySelector("img");z.addEventListener("mousemove",function(e){var r=z.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;o.style.transform="rotateY("+((x-.5)*12)+"deg) rotateX("+((.5-y)*12)+"deg) translateZ(6px)";z.style.setProperty("--mx",x*100+"%");z.style.setProperty("--my",y*100+"%")});z.addEventListener("mouseleave",function(){o.style.transform=""})})})();
 (function(){var b=document.querySelector(".tema");if(!b)return;b.addEventListener("click",function(){var r=document.documentElement,o=r.dataset.tema||(matchMedia("(prefers-color-scheme: dark)").matches?"oscuro":"claro"),n=o==="oscuro"?"claro":"oscuro";r.dataset.tema=n;try{localStorage.setItem("tema",n)}catch(e){}})})();
 </script>
 </body>
