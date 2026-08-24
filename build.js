@@ -18,6 +18,7 @@ const ENLACES = [
   { texto: "Steam", url: "https://steamcommunity.com/profiles/76561198059032778/" },
   { texto: "GitHub", url: "https://github.com/EstebanDiaczunn" },
   { texto: "Substack", url: "https://estebandiaczun.substack.com/" },
+  { texto: "CV", url: "https://cv.diaczun.com/" },
 ];
 const OFFLINE = process.argv.includes("--offline");
 
