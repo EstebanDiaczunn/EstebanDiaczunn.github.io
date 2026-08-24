@@ -30,7 +30,7 @@ Al ser un *user site* con dominio propio, **todos los repos con Pages del usuari
 ## Mail — esteban@diaczun.com
 
 Cloudflare Email Routing (gratis): regla `esteban@diaczun.com` → `estebandiaczun@gmail.com` (destino verificado).
-Registros: `MX route1/2/3.mx.cloudflare.net` (10/20/30), `TXT v=spf1 include:_spf.mx.cloudflare.net ~all`,
+Registros: `MX route1/2/3.mx.cloudflare.net` (10/20/30), `TXT v=spf1 include:_spf.mx.cloudflare.net include:_spf.google.com ~all` (Google incluido para "Enviar como" desde Gmail),
 `TXT _dmarc "v=DMARC1; p=none"`. Solo recibe; para **enviar** como esteban@ hay que configurar en Gmail
 "Enviar como" con SMTP de Gmail (Configuración → Cuentas → Enviar como), o usar el propio Gmail.
 
