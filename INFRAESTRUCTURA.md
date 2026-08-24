@@ -12,6 +12,15 @@
 | Código | `proyectos/diaczun` | Generador propio `build.js` (Node + marked + gray-matter). Ver `CLAUDE.md`. |
 | HTTPS | GitHub Pages (Let's Encrypt) | Automático una vez que el DNS apunta bien. "Enforce HTTPS" activado desde la API. |
 
+## Subdominios
+
+| Subdominio | Repo | DNS |
+|---|---|---|
+| `cv.diaczun.com` | `EstebanDiaczunn/cv` (`CNAME cv.diaczun.com`) | `CNAME cv → estebandiaczunn.github.io` (DNS only) |
+| `www.diaczun.com` | redirige a `diaczun.com` | `CNAME www → estebandiaczunn.github.io` |
+
+Para otro subdominio: repo con archivo `CNAME`, Pages activado, y un `CNAME` en Cloudflare igual al de `cv`.
+
 ## Efecto sobre los otros sitios
 
 Al ser un *user site* con dominio propio, **todos los repos con Pages del usuario cuelgan del dominio**:
