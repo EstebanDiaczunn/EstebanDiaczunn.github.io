@@ -106,7 +106,6 @@ function pagina({ titulo, descripcion, ruta, cuerpo, tipo = "website", imagen, c
 ${imagen ? `<meta property="og:image" content="${SITIO}${imagen}">` : ""}
 <link rel="alternate" type="application/rss+xml" title="Libreta de ${AUTOR}" href="${SITIO}/feed.xml">
 <link rel="icon" href="${base}assets/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="${base}assets/favicon-64.png" type="image/png" sizes="64x64">
 <link rel="apple-touch-icon" href="${base}assets/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
