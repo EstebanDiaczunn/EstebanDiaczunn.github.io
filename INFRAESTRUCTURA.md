@@ -57,6 +57,22 @@ También existe el `CF_API_TOKEN` de Clara en la VPS (`/opt/clara-ai/.env`, DNS 
 - **Mover a la VPS** (si algún día se quiere): es una carpeta estática; alcanza con copiar el repo a un `root` de nginx
   y agregar un `server` para `diaczun.com` en `clara-nginx`. Hoy no vale la pena: 80/443 los usa Clara en producción.
 
+## Identidad
+
+- Marca: la D con el ojo cerrado. `assets/marca.svg` (fuente), `assets/favicon.svg` (Chrome/Firefox/Edge),
+  `assets/apple-touch-icon.png` 180 px sobre negro (Safari, iPhone, pantalla de inicio), `assets/firma.png` 256 px
+  transparente (firma de Gmail: https://diaczun.com/assets/firma.png). Los mismos archivos están copiados en `proyectos/cv`.
+- Para regenerar un PNG usar Playwright (`locator.screenshot({omitBackground:true})`); Chrome headless `--screenshot`
+  recorta el lienzo.
+- Tipografía Fraunces + Inter desde Google Fonts; dorado `#8A6D2B` (claro) / `#D3B268` (oscuro) como único acento.
+
+## Pendientes (24/08/2026)
+
+Todo lo técnico está hecho. Queda contenido, y es de Esteban:
+1. Reemplazar la nota borrador `contenido/notas/2026-08-23-esta-libreta.md` por una propia.
+2. Subir `esteban-diaczun.pdf` nuevo a LinkedIn y poner `cv.diaczun.com` como sitio web del perfil.
+3. Opcional: Steam → Privacidad → "Detalles del juego: Público" para una sección Jugado.
+
 ## Costos
 
 Dominio ~10,46 USD/año. Todo lo demás, 0.
