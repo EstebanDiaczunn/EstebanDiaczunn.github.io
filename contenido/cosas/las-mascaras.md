@@ -2,7 +2,7 @@
 orden: 1
 titulo: Las Máscaras
 subtitulo: Libro del Escribiente
-tipo: Texto largo · hecho con IA
+tipo: Texto largo
 anio: 2026
 url: /las-mascaras/
 accion: Leer
@@ -17,4 +17,4 @@ enlaces:
 
 Setenta y dos máscaras, una sola de cada una en todo el mundo. Quien lleva una recibe su oficio y también sus deudas. No hay dioses ni magia: lo único inexplicable es que las máscaras funcionan. Treinta y nueve documentos sobre el año en que nació la primera religión.
 
-Escrito con mucha inteligencia artificial y muchas decisiones mías. Unas 35.000 palabras, gratis.
+Unas 35.000 palabras, gratis, en web, EPUB y PDF.

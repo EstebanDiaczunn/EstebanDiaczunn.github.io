@@ -1,5 +1,5 @@
 ---
-descripcion: Cómo está hecho diaczun.com y con cuánta inteligencia artificial.
+descripcion: Cómo está hecho diaczun.com.
 ---
 
 ## Con qué está hecho
@@ -14,11 +14,7 @@ No hay fotos porque no quiero que las haya.
 
 ## Sobre la inteligencia artificial
 
-Casi todo lo que hay acá se hizo con inteligencia artificial, y mucho: el código de este sitio, el diseño, y buena parte de la escritura de las **Cosas**, incluidas *Las Máscaras*. Yo pongo la idea, decido qué queda y qué se tira, corrijo y vuelvo a pedir; la máquina escribe la mayor parte de las palabras.
-
-Lo digo porque me parece lo único honesto. Llamar «libro» a algo que se hizo así me suena a soberbia, y ocultarlo me suena peor. Prefiero que sepas exactamente qué estás leyendo y decidas vos si vale algo.
-
-La libreta es distinta: ahí escribo yo, con más o menos ayuda según el día, y lo aclaro cuando importa.
+Uso inteligencia artificial para casi todo lo que hay acá: el código del sitio, el diseño y buena parte de la escritura, incluidas *Las Máscaras*. La idea, las decisiones y la corrección son mías; muchas de las palabras, no. Lo aclaro una sola vez, acá, para que sepas qué estás leyendo.
 
 ## Código
 
