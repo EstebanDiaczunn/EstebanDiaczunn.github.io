@@ -19,7 +19,7 @@ Los demás repos con Pages (p. ej. `las-mascaras`) quedan servidos debajo: `diac
 - `datos/letterboxd.json` — caché del RSS de Letterboxd; se regenera en cada build con red (`--offline` para no tocarla).
 - `.env` (no versionado) — `CF_TOKEN` de Cloudflare con permisos de DNS + Email Routing sobre diaczun.com.
 - `src/style.css` — estilos (papel claro / tinta oscura según el sistema). Se copia a `style.css`.
-- `assets/` — imágenes, `favicon.svg` y la marca: `marca.svg` / `marca.png` (la D con el ojo cerrado, guiño a Las
+- `assets/` — imágenes, `favicon.svg` y la marca: `marca.svg` / `marca.png` / `firma.png` (la de la firma de Gmail; generar PNG con Playwright, no con Chrome headless, que recorta) (la D con el ojo cerrado, guiño a Las
   Máscaras). Va en la cabecera, el favicon, el CV/PDF y la firma del mail. No se cambia sin pedirlo Esteban.
 
 Generado (no editar a mano): `index.html`, `libreta/`, `cosas/`, `visto/`, `colofon/`, `feed.xml`, `404.html`, `style.css`.
