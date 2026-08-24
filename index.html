@@ -4,64 +4,84 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Esteban Nicolás Diaczun</title>
-<meta name="description" content="Escribo. Acá dejo lo que escribo — libros, notas, pensamientos — sin el formato de blog ni de libro.">
+<meta name="description" content="Backend developer. Hago Clara. Miro películas, juego y escribo cosas con ayuda de IA. Buenos Aires.">
 <meta name="author" content="Esteban Nicolás Diaczun">
+<meta name="color-scheme" content="light dark">
 <link rel="canonical" href="https://diaczun.com/">
 <meta property="og:title" content="Esteban Nicolás Diaczun">
-<meta property="og:description" content="Escribo. Acá dejo lo que escribo — libros, notas, pensamientos — sin el formato de blog ni de libro.">
+<meta property="og:description" content="Backend developer. Hago Clara. Miro películas, juego y escribo cosas con ayuda de IA. Buenos Aires.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://diaczun.com/">
 
 <link rel="alternate" type="application/rss+xml" title="Libreta de Esteban Nicolás Diaczun" href="https://diaczun.com/feed.xml">
 <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@400;500&display=swap">
 <link rel="stylesheet" href="./style.css">
-
+<script>try{const t=localStorage.getItem("tema");if(t)document.documentElement.dataset.tema=t}catch(e){}</script>
 </head>
-<body>
+<body class="portada">
 <div class="wrap">
 <header class="top">
   <a class="marca" href="./">Esteban Diaczun</a>
   <nav>
     <a href="./libreta/">Libreta</a>
-    <a href="./obras/">Obras</a>
+    <a href="./cosas/">Cosas</a>
+    <a href="./visto/">Visto</a>
+    <a href="./colofon/">Colofón</a>
+    <button class="tema" type="button" aria-label="Cambiar tema" title="Claro / oscuro"><span></span></button>
   </nav>
 </header>
 <main>
 
-<section class="portada">
-  <h1>Esteban Nicolás Diaczun</h1>
-  <div class="texto intro"><p>Escribo. Acá dejo lo que escribo.</p>
-<p>Hay dos lugares. <strong>Obras</strong>: los libros terminados, que se leen gratis. <strong>Libreta</strong>: todo lo demás — lo que pienso, lo que anoto, lo que todavía no sé qué es.</p>
-<p>Si leés algo y querés decirme qué te pareció, escribime. Contesto.</p>
+<section class="hero">
+  <h1 class="in">Esteban Nicolás Diaczun</h1>
+  <div class="texto intro in"><p>Backend developer, en Buenos Aires. Hago <strong><a href="https://clara.net.ar">Clara</a></strong>, un asistente para clínicas.</p>
+<p>Fuera del trabajo miro muchas películas, juego, y escribo cosas con ayuda de inteligencia artificial: algunas terminan pareciendo un libro, la mayoría se quedan en la <a href="./libreta/">libreta</a>.</p>
+<p>Si algo de acá te sirvió o te molestó, escribime a <a href="mailto:esteban@diaczun.com">esteban@diaczun.com</a>.</p>
 </div>
 </section>
-<section>
-  <h2 class="over">Obras</h2>
+<section class="in">
+  <h2 class="over"><a href="./cosas/">Cosas</a></h2>
   
-<article class="obra">
-  <a href="/las-mascaras/"><img src="./assets/las-mascaras.png" alt="Portada de Las Máscaras — una máscara de madera con los ojos cerrados y la boca abierta sobre una mesa, junto a un libro abierto"></a>
+<article class="cosa">
+  <a class="port" href="/las-mascaras/"><img src="./assets/las-mascaras.png" alt="Portada de Las Máscaras — una máscara de madera con los ojos cerrados y la boca abierta sobre una mesa, junto a un libro abierto"></a>
   <div>
-    <p class="over">Libro · 2026</p>
+    <p class="over">Texto largo · hecho con IA · 2026</p>
     <h3><a href="/las-mascaras/">Las Máscaras</a></h3>
     <p class="sub">Libro del Escribiente</p>
-    <div class="texto"><p>Son setenta y dos. De cada una hay una sola en todo el mundo, y quien la lleva recibe su potestad y su oficio, y también sus deudas y sus enemigos. Ninguna manda sobre otra. No hay dioses ni magia: lo único inexplicable de este mundo es que las máscaras funcionan.</p>
-<p>No es una novela: es un texto sagrado encontrado. Treinta y nueve documentos, unas 35.000 palabras, dos o tres horas de lectura.</p>
+    <div class="texto"><p>Setenta y dos máscaras, una sola de cada una en todo el mundo. Quien lleva una recibe su oficio y también sus deudas. No hay dioses ni magia: lo único inexplicable es que las máscaras funcionan. Treinta y nueve documentos sobre el año en que nació la primera religión.</p>
+<p>Escrito con mucha inteligencia artificial y muchas decisiones mías. Unas 35.000 palabras, gratis.</p>
 </div>
-    <p class="acciones"><a class="btn" href="/las-mascaras/">Leer en línea</a><a class="btn sec" href="/las-mascaras/las-mascaras.epub">EPUB</a><a class="btn sec" href="/las-mascaras/las-mascaras.pdf">PDF</a></p>
+    <p class="acciones"><a class="btn" href="/las-mascaras/">Leer</a><a class="btn sec" href="/las-mascaras/las-mascaras.epub">EPUB</a><a class="btn sec" href="/las-mascaras/las-mascaras.pdf">PDF</a></p>
   </div>
 </article>
 </section>
+<div class="dos in">
 <section>
-  <h2 class="over">Libreta · últimas notas</h2>
-  <ul class="notas"><li><time datetime="2026-08-23">23 ago <span class="anio">2026</span></time><a href="./libreta/esta-libreta/">Esta libreta</a><span class="tema">sobre este lugar</span></li></ul>
+  <h2 class="over"><a href="./libreta/">Libreta</a></h2>
+  <ul class="notas"><li><time datetime="2026-08-23">23 ago <span class="anio">2026</span></time><a href="./libreta/esta-libreta/">Esta libreta</a><span class="tema-nota">sobre este lugar</span></li></ul>
   <p class="mas"><a href="./libreta/">Todas las notas →</a></p>
 </section>
+<section>
+  <h2 class="over"><a href="./visto/">Visto</a></h2>
+  <ul class="pelis"><li><span class="peli"><a href="https://letterboxd.com/evilnaiki/film/the-odyssey-2026/1/" rel="noopener">The Odyssey</a> <span class="anio">2026</span> <span class="re" title="Revisión">↻</span></span><span class="nota" aria-label="5.0 de 5">★★★★★</span><time datetime="2026-08-23">23 ago</time></li>
+<li><span class="peli"><a href="https://letterboxd.com/evilnaiki/film/surrogates/" rel="noopener">Surrogates</a> <span class="anio">2009</span> <span class="re" title="Revisión">↻</span></span><span class="nota" aria-label="2.5 de 5">★★½</span><time datetime="2026-08-23">23 ago</time></li>
+<li><span class="peli"><a href="https://letterboxd.com/evilnaiki/film/the-odyssey-2026/" rel="noopener">The Odyssey</a> <span class="anio">2026</span> <span class="re" title="Revisión">↻</span></span><span class="nota" aria-label="5.0 de 5">★★★★★</span><time datetime="2026-08-16">16 ago</time></li>
+<li><span class="peli"><a href="https://letterboxd.com/evilnaiki/film/underwater-2020/" rel="noopener">Underwater</a> <span class="anio">2020</span></span><span class="nota" aria-label="4.0 de 5">★★★★</span><time datetime="2026-07-09">09 jul</time></li>
+<li><span class="peli"><a href="https://letterboxd.com/evilnaiki/film/books-of-blood/" rel="noopener">Books of Blood</a> <span class="anio">2020</span></span><span class="nota" aria-label="3.0 de 5">★★★</span><time datetime="2026-07-16">16 jul</time></li>
+<li><span class="peli"><a href="https://letterboxd.com/evilnaiki/film/the-hand-that-rocks-the-cradle/" rel="noopener">The Hand That Rocks the Cradle</a> <span class="anio">1992</span></span><span class="nota" aria-label="3.5 de 5">★★★½</span><time datetime="2026-06-15">15 jun</time></li></ul><p class="mas"><a href="./visto/">Más películas →</a></p>
+</section>
+</div>
 </main>
 <footer>
-  <span>© 2026 Esteban Nicolás Diaczun</span>
-  <span><a href="mailto:estebandiaczun@gmail.com">estebandiaczun@gmail.com</a></span>
-  <span><a href="./feed.xml">RSS</a></span>
+  <div class="enlaces"><a href="https://letterboxd.com/evilnaiki/" rel="me noopener">Letterboxd</a><a href="https://steamcommunity.com/profiles/76561198059032778/" rel="me noopener">Steam</a><a href="https://github.com/EstebanDiaczunn" rel="me noopener">GitHub</a><a href="https://estebandiaczun.substack.com/" rel="me noopener">Substack</a><a href="mailto:esteban@diaczun.com">esteban@diaczun.com</a><a href="./feed.xml">RSS</a></div>
+  <div class="firma">© 2026 Esteban Nicolás Diaczun</div>
 </footer>
 </div>
+<script>
+(function(){var b=document.querySelector(".tema");if(!b)return;b.addEventListener("click",function(){var r=document.documentElement,o=r.dataset.tema||(matchMedia("(prefers-color-scheme: dark)").matches?"oscuro":"claro"),n=o==="oscuro"?"claro":"oscuro";r.dataset.tema=n;try{localStorage.setItem("tema",n)}catch(e){}})})();
+</script>
 </body>
 </html>

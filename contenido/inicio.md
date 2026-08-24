@@ -1,11 +1,13 @@
 ---
 titulo: Esteban Nicolás Diaczun
-descripcion: Escribo. Acá dejo lo que escribo — libros, notas, pensamientos — sin el formato de blog ni de libro.
-libreta: Lo que no cabe en un libro. Notas, pensamientos, fragmentos, ideas a medio hacer. Sin más orden que la fecha.
+descripcion: Backend developer. Hago Clara. Miro películas, juego y escribo cosas con ayuda de IA. Buenos Aires.
+libreta: Notas, pensamientos, cosas a medio pensar. Sin más orden que la fecha y sin la obligación de que sean buenas.
+cosas: Lo que terminé y se puede ver. Todo hecho con mucha ayuda de inteligencia artificial; cómo, está en el colofón.
+visto: Lo que miro, con la nota que le puse ese día. Viene de mi diario en
 ---
 
-Escribo. Acá dejo lo que escribo.
+Backend developer, en Buenos Aires. Hago **[Clara](https://clara.net.ar)**, un asistente para clínicas.
 
-Hay dos lugares. **Obras**: los libros terminados, que se leen gratis. **Libreta**: todo lo demás — lo que pienso, lo que anoto, lo que todavía no sé qué es.
+Fuera del trabajo miro muchas películas, juego, y escribo cosas con ayuda de inteligencia artificial: algunas terminan pareciendo un libro, la mayoría se quedan en la [libreta](./libreta/).
 
-Si leés algo y querés decirme qué te pareció, escribime. Contesto.
+Si algo de acá te sirvió o te molestó, escribime a [esteban@diaczun.com](mailto:esteban@diaczun.com).

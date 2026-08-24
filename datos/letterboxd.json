@@ -1,0 +1,74 @@
+[
+  {
+    "titulo": "The Odyssey",
+    "anio": "2026",
+    "nota": "5.0",
+    "fecha": "2026-08-23",
+    "revision": true,
+    "url": "https://letterboxd.com/evilnaiki/film/the-odyssey-2026/1/"
+  },
+  {
+    "titulo": "Surrogates",
+    "anio": "2009",
+    "nota": "2.5",
+    "fecha": "2026-08-23",
+    "revision": true,
+    "url": "https://letterboxd.com/evilnaiki/film/surrogates/"
+  },
+  {
+    "titulo": "The Odyssey",
+    "anio": "2026",
+    "nota": "5.0",
+    "fecha": "2026-08-16",
+    "revision": true,
+    "url": "https://letterboxd.com/evilnaiki/film/the-odyssey-2026/"
+  },
+  {
+    "titulo": "Underwater",
+    "anio": "2020",
+    "nota": "4.0",
+    "fecha": "2026-07-09",
+    "revision": false,
+    "url": "https://letterboxd.com/evilnaiki/film/underwater-2020/"
+  },
+  {
+    "titulo": "Books of Blood",
+    "anio": "2020",
+    "nota": "3.0",
+    "fecha": "2026-07-16",
+    "revision": false,
+    "url": "https://letterboxd.com/evilnaiki/film/books-of-blood/"
+  },
+  {
+    "titulo": "The Hand That Rocks the Cradle",
+    "anio": "1992",
+    "nota": "3.5",
+    "fecha": "2026-06-15",
+    "revision": false,
+    "url": "https://letterboxd.com/evilnaiki/film/the-hand-that-rocks-the-cradle/"
+  },
+  {
+    "titulo": "Phone Booth",
+    "anio": "2002",
+    "nota": "2.0",
+    "fecha": "2026-05-30",
+    "revision": false,
+    "url": "https://letterboxd.com/evilnaiki/film/phone-booth/"
+  },
+  {
+    "titulo": "Chain Reaction",
+    "anio": "1996",
+    "nota": "2.0",
+    "fecha": "2026-05-30",
+    "revision": false,
+    "url": "https://letterboxd.com/evilnaiki/film/chain-reaction/"
+  },
+  {
+    "titulo": "The Negotiator",
+    "anio": "1998",
+    "nota": "5.0",
+    "fecha": "2026-05-24",
+    "revision": false,
+    "url": "https://letterboxd.com/evilnaiki/film/the-negotiator/"
+  }
+]

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colofón — Esteban Nicolás Diaczun</title>
+<meta name="description" content="Cómo está hecho diaczun.com y con cuánta inteligencia artificial.">
+<meta name="author" content="Esteban Nicolás Diaczun">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://diaczun.com/colofon/">
+<meta property="og:title" content="Colofón — Esteban Nicolás Diaczun">
+<meta property="og:description" content="Cómo está hecho diaczun.com y con cuánta inteligencia artificial.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://diaczun.com/colofon/">
+
+<link rel="alternate" type="application/rss+xml" title="Libreta de Esteban Nicolás Diaczun" href="https://diaczun.com/feed.xml">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@400;500&display=swap">
+<link rel="stylesheet" href="../style.css">
+<script>try{const t=localStorage.getItem("tema");if(t)document.documentElement.dataset.tema=t}catch(e){}</script>
+</head>
+<body class="">
+<div class="wrap">
+<header class="top">
+  <a class="marca" href="../">Esteban Diaczun</a>
+  <nav>
+    <a href="../libreta/">Libreta</a>
+    <a href="../cosas/">Cosas</a>
+    <a href="../visto/">Visto</a>
+    <a href="../colofon/" aria-current="page">Colofón</a>
+    <button class="tema" type="button" aria-label="Cambiar tema" title="Claro / oscuro"><span></span></button>
+  </nav>
+</header>
+<main>
+<h1>Colofón</h1>
+<div class="texto"><h2>Con qué está hecho</h2>
+<p>Este sitio es un puñado de archivos de texto en Markdown y un script de Node de doscientas líneas que los convierte en HTML. No hay framework, base de datos, cookies, analítica ni comentarios. Lo aloja GitHub Pages; el dominio y el mail están en Cloudflare. Cuesta diez dólares al año, todos del dominio.</p>
+<p>Los títulos están en <a href="https://fonts.google.com/specimen/Fraunces">Fraunces</a> y el texto en <a href="https://rsms.me/inter/">Inter</a>. El sitio se ve claro u oscuro según el sistema, y el botón de arriba a la derecha lo cambia.</p>
+<p>Las películas de <strong>Visto</strong> las lee del diario público de mi cuenta de <a href="https://letterboxd.com/evilnaiki/">Letterboxd</a> cada vez que se regenera el sitio. No hay nada que yo cargue dos veces.</p>
+<p>No hay fotos porque no quiero que las haya.</p>
+<h2>Sobre la inteligencia artificial</h2>
+<p>Casi todo lo que hay acá se hizo con inteligencia artificial, y mucho: el código de este sitio, el diseño, y buena parte de la escritura de las <strong>Cosas</strong>, incluidas <em>Las Máscaras</em>. Yo pongo la idea, decido qué queda y qué se tira, corrijo y vuelvo a pedir; la máquina escribe la mayor parte de las palabras.</p>
+<p>Lo digo porque me parece lo único honesto. Llamar «libro» a algo que se hizo así me suena a soberbia, y ocultarlo me suena peor. Prefiero que sepas exactamente qué estás leyendo y decidas vos si vale algo.</p>
+<p>La libreta es distinta: ahí escribo yo, con más o menos ayuda según el día, y lo aclaro cuando importa.</p>
+<h2>Código</h2>
+<p>El generador está en <a href="https://github.com/EstebanDiaczunn/EstebanDiaczunn.github.io">github.com/EstebanDiaczunn/EstebanDiaczunn.github.io</a>. Si querés armarte algo parecido, copialo.</p>
+</div>
+</main>
+<footer>
+  <div class="enlaces"><a href="https://letterboxd.com/evilnaiki/" rel="me noopener">Letterboxd</a><a href="https://steamcommunity.com/profiles/76561198059032778/" rel="me noopener">Steam</a><a href="https://github.com/EstebanDiaczunn" rel="me noopener">GitHub</a><a href="https://estebandiaczun.substack.com/" rel="me noopener">Substack</a><a href="mailto:esteban@diaczun.com">esteban@diaczun.com</a><a href="../feed.xml">RSS</a></div>
+  <div class="firma">© 2026 Esteban Nicolás Diaczun</div>
+</footer>
+</div>
+<script>
+(function(){var b=document.querySelector(".tema");if(!b)return;b.addEventListener("click",function(){var r=document.documentElement,o=r.dataset.tema||(matchMedia("(prefers-color-scheme: dark)").matches?"oscuro":"claro"),n=o==="oscuro"?"claro":"oscuro";r.dataset.tema=n;try{localStorage.setItem("tema",n)}catch(e){}})})();
+</script>
+</body>
+</html>

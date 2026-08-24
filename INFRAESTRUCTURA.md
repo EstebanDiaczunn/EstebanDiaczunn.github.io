@@ -18,14 +18,23 @@ Al ser un *user site* con dominio propio, **todos los repos con Pages del usuari
 `estebandiaczunn.github.io/las-mascaras/` → redirige (301) a `diaczun.com/las-mascaras/`. Los links viejos
 (Reddit, Substack) siguen funcionando. Un libro nuevo con Pages en su repo aparece solo en `diaczun.com/<repo>/`.
 
+## Mail — esteban@diaczun.com
+
+Cloudflare Email Routing (gratis): regla `esteban@diaczun.com` → `estebandiaczun@gmail.com` (destino verificado).
+Registros: `MX route1/2/3.mx.cloudflare.net` (10/20/30), `TXT v=spf1 include:_spf.mx.cloudflare.net ~all`,
+`TXT _dmarc "v=DMARC1; p=none"`. Solo recibe; para **enviar** como esteban@ hay que configurar en Gmail
+"Enviar como" con SMTP de Gmail (Configuración → Cuentas → Enviar como), o usar el propio Gmail.
+
 ## Token de Cloudflare
 
-No hay token propio. Se usó el `CF_API_TOKEN` de Clara, que vive en la VPS `clara-vps` en `/opt/clara-ai/.env`
-(válido hasta el 16/01/2027, con permiso de DNS sobre `clara.net.ar` y `diaczun.com`). Para cambiar DNS:
+En `proyectos/diaczun/.env` (`CF_TOKEN`, no versionado): permisos DNS Edit + Email Routing Rules Edit + Email Routing
+Addresses Edit, solo zona `diaczun.com`. Creado el 24/08/2026 desde la cuenta de Esteban. Para cambiar DNS:
 
 ```bash
-CF_TOKEN=$(ssh clara-vps "grep -m1 '^CF_API_TOKEN=' /opt/clara-ai/.env | cut -d= -f2-") ./dns-cloudflare.sh
+set -a; . ./.env; set +a; ./dns-cloudflare.sh
 ```
+
+También existe el `CF_API_TOKEN` de Clara en la VPS (`/opt/clara-ai/.env`, DNS sobre `clara.net.ar` y `diaczun.com`).
 
 (El script crea los registros; si ya existen, Cloudflare devuelve error 81058 y no pasa nada.)
 

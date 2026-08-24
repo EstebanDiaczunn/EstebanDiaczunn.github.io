@@ -6,6 +6,7 @@
 <title>No está — Esteban Nicolás Diaczun</title>
 <meta name="description" content="Página no encontrada.">
 <meta name="author" content="Esteban Nicolás Diaczun">
+<meta name="color-scheme" content="light dark">
 <link rel="canonical" href="https://diaczun.com/404.html">
 <meta property="og:title" content="No está — Esteban Nicolás Diaczun">
 <meta property="og:description" content="Página no encontrada.">
@@ -14,26 +15,34 @@
 
 <link rel="alternate" type="application/rss+xml" title="Libreta de Esteban Nicolás Diaczun" href="https://diaczun.com/feed.xml">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@400;500&display=swap">
 <link rel="stylesheet" href="../style.css">
-
+<script>try{const t=localStorage.getItem("tema");if(t)document.documentElement.dataset.tema=t}catch(e){}</script>
 </head>
-<body>
+<body class="">
 <div class="wrap">
 <header class="top">
   <a class="marca" href="../">Esteban Diaczun</a>
   <nav>
     <a href="../libreta/">Libreta</a>
-    <a href="../obras/">Obras</a>
+    <a href="../cosas/">Cosas</a>
+    <a href="../visto/">Visto</a>
+    <a href="../colofon/">Colofón</a>
+    <button class="tema" type="button" aria-label="Cambiar tema" title="Claro / oscuro"><span></span></button>
   </nav>
 </header>
 <main>
 <h1>No está.</h1><p class="texto intro">Esa página no existe o se movió. <a href="/">Volver al inicio</a>.</p>
 </main>
 <footer>
-  <span>© 2026 Esteban Nicolás Diaczun</span>
-  <span><a href="mailto:estebandiaczun@gmail.com">estebandiaczun@gmail.com</a></span>
-  <span><a href="../feed.xml">RSS</a></span>
+  <div class="enlaces"><a href="https://letterboxd.com/evilnaiki/" rel="me noopener">Letterboxd</a><a href="https://steamcommunity.com/profiles/76561198059032778/" rel="me noopener">Steam</a><a href="https://github.com/EstebanDiaczunn" rel="me noopener">GitHub</a><a href="https://estebandiaczun.substack.com/" rel="me noopener">Substack</a><a href="mailto:esteban@diaczun.com">esteban@diaczun.com</a><a href="../feed.xml">RSS</a></div>
+  <div class="firma">© 2026 Esteban Nicolás Diaczun</div>
 </footer>
 </div>
+<script>
+(function(){var b=document.querySelector(".tema");if(!b)return;b.addEventListener("click",function(){var r=document.documentElement,o=r.dataset.tema||(matchMedia("(prefers-color-scheme: dark)").matches?"oscuro":"claro"),n=o==="oscuro"?"claro":"oscuro";r.dataset.tema=n;try{localStorage.setItem("tema",n)}catch(e){}})})();
+</script>
 </body>
 </html>
