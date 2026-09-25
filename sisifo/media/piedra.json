@@ -1,0 +1,23 @@
+{
+  "imagen": "piedra.webp",
+  "cuadros": 1,
+  "columnas": 1,
+  "filas": 1,
+  "celda": [
+    300,
+    300
+  ],
+  "fps": 24.0,
+  "ancla": [
+    150.0,
+    150.0
+  ],
+  "pixeles_por_metro": 216.45,
+  "avance_por_ciclo": 0.0,
+  "piedra": [
+    0.8,
+    0.42
+  ],
+  "radio_piedra": 0.42,
+  "pendiente_grados": 20.052
+}

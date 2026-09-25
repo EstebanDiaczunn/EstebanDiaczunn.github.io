@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sísifo — Volver a empezar</title>
+<meta name="description" content="Una experiencia sobre negarse a dar por garantizada la derrota.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23242420'/%3E%3Cpath d='M3 27L29 12V27Z' fill='%23d8c59c'/%3E%3Ccircle cx='19' cy='10' r='6' fill='%23bb563c'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<canvas id="world" role="img" aria-label="Sísifo empuja la piedra, la pierde, espera, desciende y vuelve a intentarlo."></canvas>
+<div class="veil"></div>
+<header><a href="./" aria-label="Sísifo, inicio">SÍSIFO<span>UN MITO. UN NUEVO INTENTO.</span></a><button id="pause" aria-label="Pausar animación" title="Pausar animación"><span id="pauseIcon">Ⅱ</span></button></header>
+<section class="intro"><p class="eyebrow">ANTES DE DARSE POR VENCIDO</p><h1>Y aun así,<br><em>otra vez.</em></h1><p class="lead">Nadie prometió una salida.<br>Nadie demostró que no exista.</p></section>
+<div class="chapter" aria-hidden="true"><span id="phaseNumber">I</span><span id="phaseName">EL ASCENSO</span><div class="line"><i id="progress"></i></div></div>
+<footer><div class="thought"><p id="thought">Todavía no es imposible.</p><span id="count">INTENTO 001</span></div><div class="interaction"><button id="push"><span class="buttonMark">↑</span><span id="pushLabel">Ayudalo a empujar</span></button><p>Mantené presionado · o usá la barra espaciadora</p></div><div class="credit"><button id="read">Antes de bajar <span aria-hidden="true">↗</span></button><span>Una reflexión sobre lo imposible.</span></div></footer>
+<div id="loading" role="status">La montaña espera…</div>
+</main>
+<dialog id="essay" aria-labelledby="essayTitle"><button id="closeEssay" aria-label="Cerrar reflexión">×</button><p class="eyebrow">UNA LECTURA PROPIA DEL MITO</p><h2 id="essayTitle">Antes de bajar.</h2><p class="opening">No pedimos tener garantizada la victoria. Nos negamos a dar por garantizada la derrota.</p><p>La piedra vuelve al pie de la montaña. Sísifo la mira. Entre la caída y el primer paso hay un instante que todavía podemos interrogar.</p><p>¿Ha descubierto que no existe una salida, o solamente que este intento no funcionó?</p><p>En el mito, la condena es eterna. En nuestra vida, muchas veces llamamos imposible a lo que aún no sabemos resolver. La diferencia importa: desconocer una salida no equivale a demostrar que no existe.</p><p>Un espíritu indomable también observa, aprende, cambia de camino. Puede desafiar la tarea misma. Puede preguntar quién puso la piedra allí y por qué habría de subirla.</p><p>Aceptar puede ser una forma de libertad. Pero queremos detenernos antes: en ese momento en que todavía cabe discutir si la condena es inevitable.</p><p class="ending">La piedra cayó.<br>La pregunta sigue en pie.</p><p class="note">Esta es una interpretación propia, en diálogo con el mito; no una cita ni un resumen de Camus.</p></dialog><script src="ciclo-rechazado.js"></script>
+</body></html>
