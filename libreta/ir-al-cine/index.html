@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@400;500&display=swap">
 <link rel="stylesheet" href="../../style.css">
-<script>try{const t=localStorage.getItem("tema");if(t)document.documentElement.dataset.tema=t}catch(e){}</script>
+<script>try{const r=document.documentElement,t=localStorage.getItem("tema");if(t)r.dataset.tema=t;r.dataset.modo=new URLSearchParams(location.search).get("modo")==="profesional"?"profesional":"personal"}catch(e){}</script>
 </head>
 <body class="">
 <div class="wrap">
@@ -59,6 +59,7 @@
 <script>
 (function(){if(!matchMedia("(hover: hover)").matches||matchMedia("(prefers-reduced-motion: reduce)").matches)return;document.querySelectorAll(".cosa .port").forEach(function(z){var o=z.querySelector("img");z.addEventListener("mousemove",function(e){var r=z.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;o.style.transform="rotateY("+((x-.5)*12)+"deg) rotateX("+((.5-y)*12)+"deg) translateZ(6px)";z.style.setProperty("--mx",x*100+"%");z.style.setProperty("--my",y*100+"%")});z.addEventListener("mouseleave",function(){o.style.transform=""})})})();
 (function(){var b=document.querySelector(".tema");if(!b)return;b.addEventListener("click",function(){var r=document.documentElement,o=r.dataset.tema||(matchMedia("(prefers-color-scheme: dark)").matches?"oscuro":"claro"),n=o==="oscuro"?"claro":"oscuro";r.dataset.tema=n;try{localStorage.setItem("tema",n)}catch(e){}})})();
+(function(){var r=document.documentElement,bs=document.querySelectorAll(".modo button");if(!bs.length)return;function poner(m){r.dataset.modo=m;bs.forEach(function(b){b.setAttribute("aria-pressed",b.dataset.ir===m)})}poner(r.dataset.modo||"personal");bs.forEach(function(b){b.addEventListener("click",function(){poner(b.dataset.ir);try{history.replaceState(null,"",b.dataset.ir==="profesional"?"?modo=profesional":location.pathname)}catch(e){}})})})();
 </script>
 </body>
 </html>

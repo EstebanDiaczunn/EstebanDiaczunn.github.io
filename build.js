@@ -111,7 +111,7 @@ ${imagen ? `<meta property="og:image" content="${SITIO}${imagen}">` : ""}
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@400;500&display=swap">
 <link rel="stylesheet" href="${base}style.css">
-<script>try{const t=localStorage.getItem("tema");if(t)document.documentElement.dataset.tema=t}catch(e){}</script>
+<script>try{const r=document.documentElement,t=localStorage.getItem("tema");if(t)r.dataset.tema=t;r.dataset.modo=new URLSearchParams(location.search).get("modo")==="profesional"?"profesional":"personal"}catch(e){}</script>
 </head>
 <body class="${clase}">
 <div class="wrap">
@@ -136,6 +136,7 @@ ${cuerpo}
 <script>
 (function(){if(!matchMedia("(hover: hover)").matches||matchMedia("(prefers-reduced-motion: reduce)").matches)return;document.querySelectorAll(".cosa .port").forEach(function(z){var o=z.querySelector("img");z.addEventListener("mousemove",function(e){var r=z.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;o.style.transform="rotateY("+((x-.5)*12)+"deg) rotateX("+((.5-y)*12)+"deg) translateZ(6px)";z.style.setProperty("--mx",x*100+"%");z.style.setProperty("--my",y*100+"%")});z.addEventListener("mouseleave",function(){o.style.transform=""})})})();
 (function(){var b=document.querySelector(".tema");if(!b)return;b.addEventListener("click",function(){var r=document.documentElement,o=r.dataset.tema||(matchMedia("(prefers-color-scheme: dark)").matches?"oscuro":"claro"),n=o==="oscuro"?"claro":"oscuro";r.dataset.tema=n;try{localStorage.setItem("tema",n)}catch(e){}})})();
+(function(){var r=document.documentElement,bs=document.querySelectorAll(".modo button");if(!bs.length)return;function poner(m){r.dataset.modo=m;bs.forEach(function(b){b.setAttribute("aria-pressed",b.dataset.ir===m)})}poner(r.dataset.modo||"personal");bs.forEach(function(b){b.addEventListener("click",function(){poner(b.dataset.ir);try{history.replaceState(null,"",b.dataset.ir==="profesional"?"?modo=profesional":location.pathname)}catch(e){}})})})();
 </script>
 </body>
 </html>
@@ -157,6 +158,8 @@ const tarjetaCosa = (c, base) => `
   </div>
 </article>`;
 
+// renglón de la portada: título enlazado, una línea de texto y un dato a la derecha
+const fila = (f) => `<li><a href="${f.url}">${esc(f.titulo)}</a>${f.texto ? `<span>${esc(f.texto)}</span>` : ""}${f.lado ? `<small>${esc(f.lado)}</small>` : ""}</li>`;
 // ---------- construcción ----------
 async function construir() {
   console.log("diaczun.com");
@@ -175,24 +178,30 @@ async function construir() {
     titulo: AUTOR, ruta: "/", descripcion: inicio.descripcion, clase: "portada",
     cuerpo: `
 <section class="hero">
-  <h1 class="in">${esc(inicio.titulo || AUTOR)}</h1>
-  <div class="texto intro in">${inicio.html}</div>
+  <h1 class="in">Esteban<span data-modo="profesional"> Nicolás Diaczun</span></h1>
+  <div class="modo in" role="group" aria-label="Qué parte mostrar"><button type="button" data-ir="personal" aria-pressed="true">Personal</button><button type="button" data-ir="profesional" aria-pressed="false">Profesional</button></div>
 </section>
-<section class="in">
-  <h2 class="over"><a href="./cosas/">Cosas</a></h2>
-  ${cosas.slice(0, 2).map((c) => tarjetaCosa(c, "./")).join("\n")}
+<section class="fila in">
+  <h2>Sobre mí</h2>
+  <div class="texto intro">
+    <div data-modo="profesional">${marked.parse(inicio.profesional || "")}</div>
+    <div data-modo="personal">${marked.parse(inicio.personal || "")}</div>
+    ${inicio.html}
+  </div>
 </section>
-<div class="dos in">
-<section>
-  <h2 class="over"><a href="./libreta/">Libreta</a></h2>
-  <ul class="notas">${notas.slice(0, 5).map((n) => itemNota(n, "./")).join("\n")}</ul>
-  <p class="mas"><a href="./libreta/">Todas las notas →</a></p>
+<div class="adorno in" aria-hidden="true"><svg viewBox="0 0 24 12"><path d="M3 3q9 9 18 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+<section class="fila" data-modo="profesional">
+  <h2>Proyectos</h2>
+  <ul class="lista">${(inicio.proyectos || []).map(fila).join("\n")}</ul>
 </section>
-<section>
-  <h2 class="over"><a href="./visto/">Visto</a></h2>
-  ${pelis.length ? `<ul class="pelis">${pelis.slice(0, 6).map(itemPeli).join("\n")}</ul><p class="mas"><a href="./visto/">Más películas →</a></p>` : `<p class="texto">Nada todavía.</p>`}
+<section class="fila" data-modo="personal">
+  <h2><a href="./libreta/">Libreta</a></h2>
+  <ul class="lista">${notas.slice(0, 5).map((n) => fila({ titulo: n.titulo, url: `./libreta/${n.slug}/`, lado: `${fechaCorta(n.fecha)} ${n.fecha.getUTCFullYear()}` })).join("\n")}</ul>
 </section>
-</div>`,
+<section class="fila" data-modo="personal">
+  <h2><a href="./cosas/">Cosas</a></h2>
+  <ul class="lista">${cosas.map((c) => fila({ titulo: c.titulo, url: c.url, texto: c.subtitulo, lado: c.anio })).join("\n")}</ul>
+</section>`,
   }));
 
   // Libreta

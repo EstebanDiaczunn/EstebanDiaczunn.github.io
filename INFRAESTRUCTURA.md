@@ -34,6 +34,13 @@ Registros: `MX route1/2/3.mx.cloudflare.net` (10/20/30), `TXT v=spf1 include:_sp
 `TXT _dmarc "v=DMARC1; p=none"`. Solo recibe; para **enviar** como esteban@ hay que configurar en Gmail
 "Enviar como" con SMTP de Gmail (Configuración → Cuentas → Enviar como), o usar el propio Gmail.
 
+**Límite conocido (17/11/2026):** Email Routing rechaza con `550 5.7.26 Cannot forward emails that are not authenticated`
+todo mail cuyo remitente no pasa SPF ni DKIM (probado desde la VPS). El rebote le llega al remitente, en Gmail no queda
+rastro. No es configurable. Salidas: casilla real (Zoho/Migadu) cambiando los MX, o
+un Email Worker que reciba y reenvíe con `send_email` (hace falta token con Email Routing Rules Edit + Workers Edit).
+El `CF_API_TOKEN` de Clara sólo tiene DNS y Workers sobre esta zona: no puede leer ni tocar Email Routing.
+Escribirse desde el mismo Gmail a esteban@ no prueba nada: Gmail no lo muestra como recibido.
+
 ## Token de Cloudflare
 
 En `proyectos/diaczun/.env` (`CF_TOKEN`, no versionado): permisos DNS Edit + Email Routing Rules Edit + Email Routing

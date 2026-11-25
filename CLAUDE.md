@@ -15,6 +15,10 @@ Los demás repos con Pages (p. ej. `las-mascaras`) quedan servidos debajo: `diac
 - `contenido/cosas/slug.md` — una cosa terminada. Frontmatter: `orden`, `titulo`, `subtitulo`, `tipo`, `anio`,
   `url`, `accion`, `portada`, `alt`, `enlaces: [{texto,url}]`. El cuerpo es la reseña.
 - `contenido/inicio.md` — portada (`titulo`, `descripcion`, y los textos de cabecera `libreta`, `cosas`, `visto`).
+  La portada tiene dos modos (idea tomada de thariq.io, con identidad propia): **Personal** (por defecto: Libreta y Cosas)
+  y **Profesional** (`?modo=profesional`: Proyectos). Pocas cosas y sutiles (owner, 17/11/2026): renglones de texto, sin tapas ni botones. `personal` y `profesional` son el «Sobre mí» de cada modo,
+  `proyectos: [{titulo,url,texto}]` la lista del modo profesional; el cuerpo es la línea de contacto, que va en los dos.
+  Sin JS se ve todo junto. Sin medallón por ahora: la marca ahí parecía ícono de app (owner, 17/11/2026); va la foto de Esteban cuando la pase.
 - `contenido/colofon.md` — el colofón.
 - `datos/letterboxd.json` — caché del RSS de Letterboxd; se regenera en cada build con red (`--offline` para no tocarla).
 - `.env` (no versionado) — `CF_TOKEN` de Cloudflare con permisos de DNS + Email Routing sobre diaczun.com.
@@ -37,7 +41,7 @@ npm run dev               # vista previa en http://localhost:8787
 
 - Español rioplatense en la libreta; las obras respetan su propia voz.
 - Una nota puede tener tres líneas. No hay mínimo. No se fuerza un cierre.
-- No agregar analítica, comentarios ni fotos. JS mínimo: botón de tema y la inclinación de la portada (solo con mouse).
+- No agregar analítica, comentarios ni fotos. JS mínimo: botón de tema, conmutador Personal/Profesional de la portada y la inclinación de la tapa (solo con mouse).
 - Identidad: papel con grano fino en claro (sin grano en oscuro), Fraunces + Inter, dorado como único acento.
 - Nada de salud (`faro`), dirección ni teléfono. Steam/Letterboxd son públicos y se pueden sacar borrando una línea.
 - El CV vive aparte en `proyectos/cv` → `cv.diaczun.com`; desde acá solo se enlaza en el pie.

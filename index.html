@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Esteban Nicolás Diaczun</title>
-<meta name="description" content="Backend developer en QTECH, sistemas de salud. Hago Clara como proyecto propio. Miro películas, juego y escribo cosas. Buenos Aires.">
+<meta name="description" content="AI engineer. Hago Rúbrica (contabilidad con agentes) y Clara (salud), los dos en producción. Miro películas, juego y escribo cosas. Buenos Aires.">
 <meta name="author" content="Esteban Nicolás Diaczun">
 <meta name="color-scheme" content="light dark">
 <link rel="canonical" href="https://diaczun.com/">
 <meta property="og:title" content="Esteban Nicolás Diaczun">
-<meta property="og:description" content="Backend developer en QTECH, sistemas de salud. Hago Clara como proyecto propio. Miro películas, juego y escribo cosas. Buenos Aires.">
+<meta property="og:description" content="AI engineer. Hago Rúbrica (contabilidad con agentes) y Clara (salud), los dos en producción. Miro películas, juego y escribo cosas. Buenos Aires.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://diaczun.com/">
 
@@ -20,7 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@400;500&display=swap">
 <link rel="stylesheet" href="./style.css">
-<script>try{const t=localStorage.getItem("tema");if(t)document.documentElement.dataset.tema=t}catch(e){}</script>
+<script>try{const r=document.documentElement,t=localStorage.getItem("tema");if(t)r.dataset.tema=t;r.dataset.modo=new URLSearchParams(location.search).get("modo")==="profesional"?"profesional":"personal"}catch(e){}</script>
 </head>
 <body class="portada">
 <div class="wrap">
@@ -37,45 +37,37 @@
 <main>
 
 <section class="hero">
-  <h1 class="in">Esteban Nicolás Diaczun</h1>
-  <div class="texto intro in"><p>Backend developer en <strong>QTECH</strong>, donde trabajo en sistemas de salud: receta electrónica, historias clínicas, turnos. Aparte hago <strong><a href="https://clara.net.ar">Clara</a></strong>, un asistente de WhatsApp para clínicas, proyecto propio. Vivo en Buenos Aires.</p>
-<p>Fuera del trabajo miro muchas películas, juego, y escribo cosas: algunas crecen hasta parecer un libro, la mayoría se quedan en la <a href="./libreta/">libreta</a>.</p>
-<p>Si algo de acá te sirvió o te molestó, escribime a <a href="mailto:esteban@diaczun.com">esteban@diaczun.com</a>.</p>
-</div>
+  <h1 class="in">Esteban<span data-modo="profesional"> Nicolás Diaczun</span></h1>
+  <div class="modo in" role="group" aria-label="Qué parte mostrar"><button type="button" data-ir="personal" aria-pressed="true">Personal</button><button type="button" data-ir="profesional" aria-pressed="false">Profesional</button></div>
 </section>
-<section class="in">
-  <h2 class="over"><a href="./cosas/">Cosas</a></h2>
-  
-<article class="cosa">
-  <a class="port" href="/las-mascaras/"><img src="./assets/las-mascaras.png" alt="Portada de Las Máscaras — una máscara de madera con los ojos cerrados y la boca abierta sobre una mesa, junto a un libro abierto"></a>
-  <div>
-    <p class="over">Texto largo · 2026</p>
-    <h3><a href="/las-mascaras/">Las Máscaras</a></h3>
-    <p class="sub">Libro del Escribiente</p>
-    <div class="texto"><p>Setenta y dos máscaras, una sola de cada una en todo el mundo. Quien lleva una recibe su oficio y también sus deudas. No hay dioses ni magia: lo único inexplicable es que las máscaras funcionan. Treinta y nueve documentos sobre el año en que nació la primera religión.</p>
-<p>Unas 35.000 palabras, gratis, en web, EPUB y PDF.</p>
+<section class="fila in">
+  <h2>Sobre mí</h2>
+  <div class="texto intro">
+    <div data-modo="profesional"><p>Construyo productos con IA y los pongo en producción. Dos son míos: <strong><a href="https://rubrica.ar">Rúbrica</a></strong>, un sistema contable y fiscal donde los agentes hacen el mes y el contador firma, y <strong><a href="https://clara.net.ar">Clara</a></strong>, un asistente de WhatsApp para clínicas. Trabajo dirigiendo agentes: especifico, reviso, verifico y despliego. De día, backend de salud en <strong>QTECH</strong>. <a href="https://cv.diaczun.com">CV</a> · <a href="https://github.com/EstebanDiaczunn">GitHub</a>. Vivo en Buenos Aires.</p>
 </div>
-    <p class="acciones"><a class="btn" href="/las-mascaras/">Leer</a><a class="btn sec" href="/las-mascaras/las-mascaras.epub">EPUB</a><a class="btn sec" href="/las-mascaras/las-mascaras.pdf">PDF</a></p>
+    <div data-modo="personal"><p>Fuera del trabajo miro muchas películas, juego, y escribo cosas: algunas crecen hasta parecer un libro, la mayoría se quedan en la <a href="./libreta/">libreta</a>.</p>
+</div>
+    <p>Si algo de acá te sirvió o te molestó, escribime a <a href="mailto:esteban@diaczun.com">esteban@diaczun.com</a>.</p>
+
   </div>
-</article>
 </section>
-<div class="dos in">
-<section>
-  <h2 class="over"><a href="./libreta/">Libreta</a></h2>
-  <ul class="notas"><li><time datetime="2026-08-24">24 ago <span class="anio">2026</span></time><a href="./libreta/ir-al-cine/">Ir al cine</a><span class="tema-nota">cine</span></li>
-<li><time datetime="2026-08-23">23 ago <span class="anio">2026</span></time><a href="./libreta/esta-libreta/">Esta libreta</a><span class="tema-nota">sobre este lugar</span></li></ul>
-  <p class="mas"><a href="./libreta/">Todas las notas →</a></p>
+<div class="adorno in" aria-hidden="true"><svg viewBox="0 0 24 12"><path d="M3 3q9 9 18 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+<section class="fila" data-modo="profesional">
+  <h2>Proyectos</h2>
+  <ul class="lista"><li><a href="https://rubrica.ar">Rúbrica</a><span>Contabilidad e impuestos con agentes; el contador firma</span></li>
+<li><a href="https://clara.net.ar">Clara</a><span>Asistente de WhatsApp para clínicas</span></li>
+<li><a href="https://github.com/EstebanDiaczunn/naiki">NAIKI</a><span>Code review para desarrollo con IA, open source</span></li></ul>
 </section>
-<section>
-  <h2 class="over"><a href="./visto/">Visto</a></h2>
-  <ul class="pelis"><li><span class="peli"><a href="https://letterboxd.com/evilnaiki/film/the-odyssey-2026/1/" rel="noopener">The Odyssey</a> <span class="anio">2026</span> <span class="re" title="Revisión">↻</span></span><span class="nota" aria-label="5.0 de 5">★★★★★</span><time datetime="2026-08-23">23 ago</time></li>
-<li><span class="peli"><a href="https://letterboxd.com/evilnaiki/film/surrogates/" rel="noopener">Surrogates</a> <span class="anio">2009</span> <span class="re" title="Revisión">↻</span></span><span class="nota" aria-label="2.5 de 5">★★½</span><time datetime="2026-08-23">23 ago</time></li>
-<li><span class="peli"><a href="https://letterboxd.com/evilnaiki/film/the-odyssey-2026/" rel="noopener">The Odyssey</a> <span class="anio">2026</span> <span class="re" title="Revisión">↻</span></span><span class="nota" aria-label="5.0 de 5">★★★★★</span><time datetime="2026-08-16">16 ago</time></li>
-<li><span class="peli"><a href="https://letterboxd.com/evilnaiki/film/underwater-2020/" rel="noopener">Underwater</a> <span class="anio">2020</span></span><span class="nota" aria-label="4.0 de 5">★★★★</span><time datetime="2026-07-09">09 jul</time></li>
-<li><span class="peli"><a href="https://letterboxd.com/evilnaiki/film/books-of-blood/" rel="noopener">Books of Blood</a> <span class="anio">2020</span></span><span class="nota" aria-label="3.0 de 5">★★★</span><time datetime="2026-07-16">16 jul</time></li>
-<li><span class="peli"><a href="https://letterboxd.com/evilnaiki/film/the-hand-that-rocks-the-cradle/" rel="noopener">The Hand That Rocks the Cradle</a> <span class="anio">1992</span></span><span class="nota" aria-label="3.5 de 5">★★★½</span><time datetime="2026-06-15">15 jun</time></li></ul><p class="mas"><a href="./visto/">Más películas →</a></p>
+<section class="fila" data-modo="personal">
+  <h2><a href="./libreta/">Libreta</a></h2>
+  <ul class="lista"><li><a href="./libreta/ir-al-cine/">Ir al cine</a><small>24 ago 2026</small></li>
+<li><a href="./libreta/esta-libreta/">Esta libreta</a><small>23 ago 2026</small></li></ul>
 </section>
-</div>
+<section class="fila" data-modo="personal">
+  <h2><a href="./cosas/">Cosas</a></h2>
+  <ul class="lista"><li><a href="/las-mascaras/">Las Máscaras</a><span>Libro del Escribiente</span><small>2026</small></li>
+<li><a href="https://hoguera.diaczun.com">Hoguera</a><span>Homenaje a Dark Souls</span><small>2026</small></li></ul>
+</section>
 </main>
 <footer>
   <div class="enlaces"><a href="https://letterboxd.com/evilnaiki/" rel="me noopener">Letterboxd</a><a href="https://steamcommunity.com/profiles/76561198059032778/" rel="me noopener">Steam</a><a href="https://github.com/EstebanDiaczunn" rel="me noopener">GitHub</a><a href="https://estebandiaczun.substack.com/" rel="me noopener">Substack</a><a href="https://cv.diaczun.com/" rel="me noopener">CV</a><a href="mailto:esteban@diaczun.com">esteban@diaczun.com</a><a href="./feed.xml">RSS</a></div>
@@ -85,6 +77,7 @@
 <script>
 (function(){if(!matchMedia("(hover: hover)").matches||matchMedia("(prefers-reduced-motion: reduce)").matches)return;document.querySelectorAll(".cosa .port").forEach(function(z){var o=z.querySelector("img");z.addEventListener("mousemove",function(e){var r=z.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;o.style.transform="rotateY("+((x-.5)*12)+"deg) rotateX("+((.5-y)*12)+"deg) translateZ(6px)";z.style.setProperty("--mx",x*100+"%");z.style.setProperty("--my",y*100+"%")});z.addEventListener("mouseleave",function(){o.style.transform=""})})})();
 (function(){var b=document.querySelector(".tema");if(!b)return;b.addEventListener("click",function(){var r=document.documentElement,o=r.dataset.tema||(matchMedia("(prefers-color-scheme: dark)").matches?"oscuro":"claro"),n=o==="oscuro"?"claro":"oscuro";r.dataset.tema=n;try{localStorage.setItem("tema",n)}catch(e){}})})();
+(function(){var r=document.documentElement,bs=document.querySelectorAll(".modo button");if(!bs.length)return;function poner(m){r.dataset.modo=m;bs.forEach(function(b){b.setAttribute("aria-pressed",b.dataset.ir===m)})}poner(r.dataset.modo||"personal");bs.forEach(function(b){b.addEventListener("click",function(){poner(b.dataset.ir);try{history.replaceState(null,"",b.dataset.ir==="profesional"?"?modo=profesional":location.pathname)}catch(e){}})})})();
 </script>
 </body>
 </html>

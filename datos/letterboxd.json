@@ -1,5 +1,53 @@
 [
   {
+    "titulo": "No Country for Old Men",
+    "anio": "2007",
+    "nota": "4.0",
+    "fecha": "2026-10-10",
+    "revision": false,
+    "url": "https://letterboxd.com/evilnaiki/film/no-country-for-old-men/"
+  },
+  {
+    "titulo": "Terminator: Dark Fate",
+    "anio": "2019",
+    "nota": "3.5",
+    "fecha": "2026-10-03",
+    "revision": false,
+    "url": "https://letterboxd.com/evilnaiki/film/terminator-dark-fate/"
+  },
+  {
+    "titulo": "Terminator Genisys",
+    "anio": "2015",
+    "nota": "2.5",
+    "fecha": "2026-10-03",
+    "revision": false,
+    "url": "https://letterboxd.com/evilnaiki/film/terminator-genisys/"
+  },
+  {
+    "titulo": "Terminator Salvation",
+    "anio": "2009",
+    "nota": "3.0",
+    "fecha": "2026-09-27",
+    "revision": false,
+    "url": "https://letterboxd.com/evilnaiki/film/terminator-salvation/"
+  },
+  {
+    "titulo": "Terminator 3: Rise of the Machines",
+    "anio": "2003",
+    "nota": "4.0",
+    "fecha": "2026-09-27",
+    "revision": false,
+    "url": "https://letterboxd.com/evilnaiki/film/terminator-3-rise-of-the-machines/"
+  },
+  {
+    "titulo": "Terminator 2: Judgment Day",
+    "anio": "1991",
+    "nota": "5.0",
+    "fecha": "2026-09-04",
+    "revision": false,
+    "url": "https://letterboxd.com/evilnaiki/film/terminator-2-judgment-day/"
+  },
+  {
     "titulo": "The Odyssey",
     "anio": "2026",
     "nota": "5.0",
@@ -10,7 +58,7 @@
   {
     "titulo": "Surrogates",
     "anio": "2009",
-    "nota": "2.5",
+    "nota": "2.0",
     "fecha": "2026-08-23",
     "revision": true,
     "url": "https://letterboxd.com/evilnaiki/film/surrogates/"
@@ -26,7 +74,7 @@
   {
     "titulo": "Underwater",
     "anio": "2020",
-    "nota": "4.0",
+    "nota": "3.5",
     "fecha": "2026-07-09",
     "revision": false,
     "url": "https://letterboxd.com/evilnaiki/film/underwater-2020/"
@@ -34,7 +82,7 @@
   {
     "titulo": "Books of Blood",
     "anio": "2020",
-    "nota": "3.0",
+    "nota": "2.5",
     "fecha": "2026-07-16",
     "revision": false,
     "url": "https://letterboxd.com/evilnaiki/film/books-of-blood/"
