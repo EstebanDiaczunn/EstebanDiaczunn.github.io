@@ -15,9 +15,6 @@ proyectos:
   - titulo: Clara Agenda
     url: https://clara.net.ar
     texto: Turnos y asistente de WhatsApp para consultorios
-  - titulo: NAIKI
-    url: https://github.com/EstebanDiaczunn/naiki
-    texto: Code review para desarrollo con IA, open source
 ---
 
 Si algo de acá te sirvió o te molestó, escribime a [esteban@diaczun.com](mailto:esteban@diaczun.com).
